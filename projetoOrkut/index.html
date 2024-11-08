@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orkut - Login</title>
+    <link rel="stylesheet" href="assets/css/styleslogin.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="login-content">
+            <!-- Logo e informações do Orkut -->
+            <div class="info">
+                <h1 class="logo">orkut</h1>
+                <p><strong>Conecte-se</strong> aos seus amigos e familiares usando recados e mensagens instantâneas.</p>
+                <p><strong>Conheça</strong> novas pessoas através de amigos de seus amigos e comunidades.</p>
+                <p><strong>Compartilhe</strong> seus vídeos, fotos e paixões em um só lugar.</p>
+            </div>
+
+            <!-- Formulário de Login -->
+            <div class="login-form">
+                <h2>Acesse o Orkut com a sua <span class="google-account">conta do Google</span></h2>
+                <form action="home.html" method="GET">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <div class="options">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Salvar as minhas informações neste computador.</label>
+                    </div>
+
+                    <button type="submit">Login</button>
+                </form>
+
+                <p class="not-member">Ainda não é membro? <a href="#">ENTRE JÁ</a></p>
+            </div>
+        </div>
+        <footer>
+            <p>©2008 Google - <a href="#">Sobre o Orkut</a> - <a href="#">Centro de Segurança</a> - <a
+                    href="#">Privacidade</a> - <a href="#">Termos</a></p>
+        </footer>
+    </div>
+</body>
+
+</html>

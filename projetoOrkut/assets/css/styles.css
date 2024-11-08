@@ -1,0 +1,222 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+html,
+body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #B9D3EE;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #4A6EAF;
+    color: #FFFFFF;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.navbar .logo {
+    font-size: 2rem;
+    color: #FF3399;
+    font-weight: bold;
+    font-family: 'Verdana', sans-serif;
+}
+
+.navbar a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+/* Layout principal */
+.main-content {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+    flex-grow: 1;
+    /* Permite que o conteúdo principal ocupe o restante da altura da tela */
+    padding: 20px;
+}
+
+/* Coluna da esquerda (Perfil) */
+.sidebar {
+    width: 25%;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.image-Perfil img {
+    width: 10rem;
+    height: 15rem;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.profile-info {
+    list-style: none;
+    font-size: 0.9rem;
+    color: #555;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos para o menu de navegação */
+.navigation-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.navigation-menu li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #E8EEF7;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navigation-menu li:hover {
+    background-color: #F0F8FF;
+    /* Cor de fundo ao passar o mouse */
+}
+
+.icon {
+    font-size: 1.2rem;
+    color: #4A6EAF;
+    transition: color 0.3s ease;
+}
+
+.navigation-menu li:hover .icon {
+    color: #FF3399;
+    /* Cor do ícone ao passar o mouse */
+}
+
+
+/* Centro (Informações do Perfil) */
+.profile-details {
+    width: 50%;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-details h3 {
+    color: #4A6EAF;
+    margin-bottom: 10px;
+}
+
+.profile-details table {
+    width: 100%;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.profile-details td {
+    padding: 5px;
+}
+
+/* Estilos do menu abaixo de "Sobre mim" */
+.profile-menu {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #E8EEF7;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    justify-content: space-around;
+}
+
+.profile-menu a {
+    color: #4A6EAF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: color 0.3s ease;
+    /* Transição suave para o efeito */
+}
+
+.profile-menu .icon {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    transition: color 0.3s ease;
+    /* Transição suave para o ícone */
+}
+
+.profile-menu .count {
+    font-size: 0.8rem;
+    color: #333;
+    margin-top: 2px;
+}
+
+/* Efeito de hover */
+.profile-menu a:hover {
+    color: #FF3399;
+    /* Cor da palavra ao passar o mouse */
+}
+
+.profile-menu a:hover .icon {
+    color: #FF3399;
+    /* Cor do ícone ao passar o mouse */
+}
+
+
+
+/* Coluna da direita (Amigos e Comunidades) */
+.sidebar-right {
+    width: 25%;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.friends-section,
+.communities-section {
+    margin-bottom: 20px;
+}
+
+.friends,
+.communities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.friends img,
+.communities img {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+}
